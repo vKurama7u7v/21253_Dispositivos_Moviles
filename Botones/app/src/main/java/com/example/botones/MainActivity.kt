@@ -29,8 +29,8 @@ class MainActivity : AppCompatActivity() {
         var btnSiguiente = findViewById<Button>(R.id.btnNext)
         btnSiguiente.setOnClickListener {
             var i = Intent(this, SegundaActivity::class.java)
-            i.putExtra("frase", getFrase())
-            i.putExtra("edad", 21)
+            i.putExtra("frase", getFrase()) // Mandamos dato frase con valor que tenga la vista
+            i.putExtra("edad", 21) // Enviamos dato "edad" con valor 21
             startActivity(i)
         }
 
