@@ -19,8 +19,8 @@ class SegundaActivity : AppCompatActivity() {
         var btnAbrirPantalla = findViewById<Button>(R.id.btnPantalla)
         btnAbrirPantalla.setOnClickListener{
             var i = Intent(this, MainActivity::class.java)
-
             startActivity(i)
+            finish()
         }
 
         var btnCerrarPantalla = findViewById<Button>(R.id.btnClose)
