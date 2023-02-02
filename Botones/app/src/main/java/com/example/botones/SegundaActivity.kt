@@ -8,7 +8,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 
-class SegundaActivity : AppCompatActivity(), View.OnClickListener {
+class SegundaActivity : AppCompatActivity() {
 
     private var cambioIcono: Boolean = false
     private lateinit var  imgLogo : ImageView
@@ -28,7 +28,7 @@ class SegundaActivity : AppCompatActivity(), View.OnClickListener {
         // Cambiar ImageView
         imgLogo = findViewById<ImageView>(R.id.imgVLogo)
         //var lel = false
-        /*imgLogo.setOnClickListener {
+        imgLogo.setOnClickListener {
             //if (lel){
                 //imgLogo.setImageResource(R.drawable.a)
                 //lel = true
@@ -46,29 +46,29 @@ class SegundaActivity : AppCompatActivity(), View.OnClickListener {
 
             cambioIcono = !cambioIcono
 
-        }*/
+        }
 
         // Cambiar de pantalla
         var btnAbrirPantalla = findViewById<Button>(R.id.btnPantalla)
-        /*btnAbrirPantalla.setOnClickListener{
+        btnAbrirPantalla.setOnClickListener{
             var i = Intent(this, MainActivity::class.java)
             startActivity(i)
             finish()
-        }*/
+        }
 
         // Cerrar Pantalla
         var btnCerrarPantalla = findViewById<Button>(R.id.btnClose)
-        /*btnCerrarPantalla.setOnClickListener {
+        btnCerrarPantalla.setOnClickListener {
             finish()
-        }*/
+        }
 
-        btnCerrarPantalla.setOnClickListener(this)
+        /*btnCerrarPantalla.setOnClickListener(this)*/
 
 
 
     }
 
-    override fun onClick(p0: View?) {
+    /*override fun onClick(p0: View?) {
         when(p0?.id){
             R.id.btnClose -> finish()
             R.id.btnPantalla -> {
@@ -89,4 +89,5 @@ class SegundaActivity : AppCompatActivity(), View.OnClickListener {
 
         }
     }
+    */
 }

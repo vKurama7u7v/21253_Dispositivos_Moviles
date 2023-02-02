@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LinearLayoutActivity</string>
+    <string name="numeroSegundo">Dame un segundo número</string>
+    <string name="numeroPrimero">Dame un número</string>
+    <string name="btnSuma">Suma</string>
+    <string name="btnResta">Resta</string>
+</resources>
