@@ -39,7 +39,8 @@
         android:id="@+id/etNumeroSegundo"
         android:layout_margin="32dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -64,6 +65,28 @@
             android:layout_height="wrap_content"
             />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_margin="16dp">
+
+        <Button
+            android:id="@+id/btnMulti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnMulti"
+            android:layout_marginRight="16dp"/>
+
+        <Button
+            android:id="@+id/btnDivision"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/btnDividir" />
     </LinearLayout>
 
 </LinearLayout>

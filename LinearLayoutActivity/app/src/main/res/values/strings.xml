@@ -4,4 +4,6 @@
     <string name="numeroPrimero">Dame un número</string>
     <string name="btnSuma">Suma</string>
     <string name="btnResta">Resta</string>
+    <string name="btnMulti">Multiplicar</string>
+    <string name="btnDividir">Dividir</string>
 </resources>
