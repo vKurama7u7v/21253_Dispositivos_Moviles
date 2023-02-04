@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TareaBotonesIntents</string>
+    <string name="btnSend">Envíar</string>
+    <string name="txtTitle">MATERIA DE PROGRAMACIÓN</string>
+    <string name="txtLabelCalif">Escribe tu Calificación:</string>
+</resources>
