@@ -4,17 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-<!--
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
--->
+    tools:context=".ThirdActivity">
+
     <ImageView
         android:id="@+id/imgViewBG"
         android:layout_width="wrap_content"
@@ -30,49 +21,33 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:gravity="center"
         android:background="#4D222222"
         android:padding="40dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="40dp"
             android:background="#fff">
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="¡Enhorabuena!"
                 android:fontFamily="@font/poppins_bold"
-                android:paddingBottom="40dp"
-                android:text="@string/txtTitle"
                 android:textAlignment="center"
-                android:textColor="#F64F92"
-                android:textSize="28sp" />
-
+                android:textColor="#76c893"
+                android:textSize="28sp"
+                android:paddingBottom="8dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_semibold"
-                android:text="@string/txtLabelCalif" />
-
-            <EditText
-                android:id="@+id/inputCalif"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins"
-                android:inputType="number" />
-
+                android:text="Aprobaste la materia con 10 😃"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_semibold"/>
         </LinearLayout>
-    </LinearLayout>
 
-    <Button
-        android:id="@+id/btnSend"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#F64F92"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="@string/btnSend"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_margin="40dp"/>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,4 +3,6 @@
     <string name="btnSend">Envíar</string>
     <string name="txtTitle">MATERIA DE PROGRAMACIÓN</string>
     <string name="txtLabelCalif">Escribe tu Calificación:</string>
+    <string name="msgSecond">Obtuviste un 6 😥</string>
+    <string name="btnClose">Regresar</string>
 </resources>
