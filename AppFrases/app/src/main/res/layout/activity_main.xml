@@ -32,9 +32,10 @@
                 android:paddingBottom="24dp"/>
 
             <TextView
+                android:id="@+id/txtFrase"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="tu frase"
+                android:text=""
                 android:textAlignment="center"
                 android:textColor="@color/text"
                 />

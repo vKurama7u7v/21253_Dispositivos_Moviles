@@ -35,6 +35,8 @@
                 android:id="@+id/etFrase"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColorHint="@color/input_text"
+                android:textColor="@color/input_text"
                 />
 
             <Button
