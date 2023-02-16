@@ -29,7 +29,8 @@
         android:layout_centerInParent="true"/>
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/txtLegendCanal"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Canal 5"
         android:textAlignment="textEnd"
@@ -37,19 +38,22 @@
         android:layout_toStartOf="@+id/img1"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnChange"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Cambiar"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="#E91E63"
+        android:textColor="#FFF"
         android:layout_above="@+id/txtCanal"
+        android:background="@drawable/redondo"
         />
 
     <EditText
+        android:id="@+id/etCanal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_toStartOf="@+id/btnChange"
