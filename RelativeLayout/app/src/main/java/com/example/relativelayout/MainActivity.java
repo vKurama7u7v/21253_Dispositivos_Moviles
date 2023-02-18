@@ -2,6 +2,7 @@ package com.example.relativelayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -41,6 +42,20 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 Toast.makeText(MainActivity.this, "El valor era " + text, Toast.LENGTH_LONG).show();
 
                 txtLegendCanal.setText(text);
+            }
+        });
+
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Obteniendo valores
+                String canal = etCanal.getText().toString();
+                String programa = mySpinner.getSelectedItem().toString();
+
+                Intent i = new Intent(MainActivity.this, DatosActivity.class);
+                i.putExtra("canal", canal);
+                i.putExtra("programa", programa);
+                startActivity(i);
             }
         });
     }

@@ -33,7 +33,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         when(p0?.id){
             R.id.btnSend -> {
-                Toast.makeText(this, "Calificacion $number", Toast.LENGTH_LONG).show()
+                if (number >= 7) Toast.makeText(this, "Calificacion aprob $number", Toast.LENGTH_LONG).show()
+                else Toast.makeText(this, "Calificacion reprob $number", Toast.LENGTH_LONG).show()
             }
         }
     }
