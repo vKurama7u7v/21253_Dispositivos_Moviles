@@ -41,6 +41,7 @@
                 android:textSize="28sp"
                 android:paddingBottom="8dp"/>
             <TextView
+                android:id="@+id/txtResult"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Aprobaste la materia con 10 😃"

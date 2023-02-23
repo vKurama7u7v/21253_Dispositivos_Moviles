@@ -1,5 +1,6 @@
 package com.example.tareabotonesintents
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -33,8 +34,16 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         when(p0?.id){
             R.id.btnSend -> {
-                if (number >= 7) Toast.makeText(this, "Calificacion aprob $number", Toast.LENGTH_LONG).show()
-                else Toast.makeText(this, "Calificacion reprob $number", Toast.LENGTH_LONG).show()
+                if (number >= 7) {
+                    val i = Intent(this, ThirdActivity::class.java)
+                    i.putExtra("calif", number.toString())
+                    startActivity(i)
+                }
+                else {
+                    val i = Intent(this, SecondActivity::class.java)
+                    i.putExtra("calif", number.toString())
+                    startActivity(i)
+                }
             }
         }
     }
