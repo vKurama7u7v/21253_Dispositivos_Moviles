@@ -21,12 +21,11 @@
         android:id="@+id/txtCanal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:text="Sintonizanos la proxima semana"
-        android:textColor="#436eed"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:layout_centerVertical="true"
-        android:layout_centerInParent="true"/>
+        android:textColor="#436eed" />
 
     <TextView
         android:id="@+id/txtLegendCanal"

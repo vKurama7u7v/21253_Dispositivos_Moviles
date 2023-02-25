@@ -1,8 +1,10 @@
 package com.example.relativelayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -30,6 +32,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         TextView txtLegendCanal = findViewById(R.id.txtLegendCanal);
         Spinner mySpinner = findViewById(R.id.mySpinner);
         imageView = findViewById(R.id.img1);
+
+        // Cambiar colores de TextView (Background, TextColor)
+        txtCanal.setBackgroundColor(ContextCompat.getColor(this, R.color.teal_200));
+        txtCanal.setTextColor(ContextCompat.getColor(this, R.color.purple_700));
+
+        // Color en Hexadecimal
+        // txtCanal.setBackgroundColor(Color.parseColor("#212121"));
 
         mySpinner.setOnItemSelectedListener(this);
         btnCanal.setOnClickListener(new View.OnClickListener() {
