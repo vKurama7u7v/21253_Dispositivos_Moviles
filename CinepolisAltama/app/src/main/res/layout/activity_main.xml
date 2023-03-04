@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- TOP -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cinepolis Altama"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="28dp"
+        android:padding="16dp"
+        android:background="@color/azul"
+        app:layout_constraintBaseline_toTopOf="parent"/>
+
+    <!-- CENTER -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EFEFEF"
+            android:padding="16dp">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="85dp"
+                android:layout_height="128dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/bg"
+                android:layout_marginRight="16dp"/>
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ant-Man and The Wasp: Quantummania"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/imageView"/>
+
+            <TextView
+                android:id="@+id/txtSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/imageView"
+                android:layout_below="@+id/txtTitle"
+                android:text="Ant-Man and The Wasp: Quantummania (EUA, 2023)"
+                android:textSize="10dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/txtClasification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/imageView"
+                android:layout_below="@+id/txtSubtitle"
+                android:padding="5dp"
+                android:background="#9B9B9B"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:text="B"
+                android:layout_marginRight="8dp"
+                />
+
+            <TextView
+                android:id="@+id/txtDuracion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/txtClasification"
+                android:layout_below="@+id/txtSubtitle"
+                android:padding="5dp"
+                android:background="#2B2B2B"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:text="125 min"
+                android:layout_marginRight="8dp"
+                />
+
+            <TextView
+                android:id="@+id/txtGenero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/txtDuracion"
+                android:layout_below="@+id/txtSubtitle"
+                android:padding="5dp"
+                android:background="@color/azul"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:text="Aventura, Ciencia Ficción"
+                android:layout_marginRight="8dp"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="50dp"
+            android:paddingBottom="64dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Por favor seleccione un horario:"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/spHorarios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/horarios"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnComprar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFC107"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:text="Comprar Boletos"
+            />
+    </LinearLayout>
+
+    <!-- BOTTOM -->
+    <TextView
+        android:id="@+id/txtBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="La Capital del Cine"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="22dp"
+        android:padding="16dp"
+        android:background="#2d2d2d"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
