@@ -19,7 +19,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:background="#f8fafc"
-        android:padding="16dp">
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp">
       <TextView
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
@@ -38,7 +39,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#e2e8f0"
-            android:padding="16dp">
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
 
           <ImageView
               android:id="@+id/imageView"
