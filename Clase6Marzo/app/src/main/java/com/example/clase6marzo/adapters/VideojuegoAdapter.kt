@@ -55,6 +55,7 @@ class VideojuegoAdapter(videojuegos: ArrayList<Videojuego>, context: Context): R
         // => Edita las vistas/labels de el layout (nombre, precio, imagen, etc)
 
         val videojuego: Videojuego = innerVideojuegos.get(position)
+        // videojuego.id.toString() + ": " +
         holder.txtTitle.text = videojuego.nombre
         holder.txtConsole.text = videojuego.consola
         holder.txtPrice.text = videojuego.precio.toString()
