@@ -3,6 +3,7 @@ package com.example.retrofit
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
 import android.widget.Toast
 import com.example.retrofit.models.ImageRandom
 import com.example.retrofit.network.API
@@ -15,7 +16,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Función traer imagen aleatoria
         traerImagenAleatoria()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_images, menu)
+        return super.onCreateOptionsMenu(menu)
     }
 
     private fun traerImagenAleatoria(){

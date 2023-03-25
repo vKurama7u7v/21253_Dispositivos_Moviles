@@ -15,5 +15,6 @@ interface ApiInterface {
     // Muchas Imagenes
     @GET("breed/{raza}/images")
     fun listaImagenesDePerrosPorRaza(@Path("raza") raza: String): Call<ImagesRaza>
+    // Si raza = "chihuahua" url seria breed/chihuahua/images
 
 }
