@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
+import android.view.MenuItem
 import android.widget.Toast
 import com.example.retrofit.models.ImageRandom
+import com.example.retrofit.models.ImagesRaza
 import com.example.retrofit.network.API
 import retrofit2.Call
 import retrofit2.Callback
@@ -44,6 +46,36 @@ class MainActivity : AppCompatActivity() {
 
             }
         })
+    }
+
+    private fun OnOptionsItemSelected(item: MenuItem): Boolean {
+        if(item.itemId == R.id.option_menu_list_images){
+            Toast.makeText(this, "OPTION menu 1", Toast.LENGTH_SHORT).show()
+            val apiCall = API().crearServicioAPI()
+            apiCall.listaImagenesDePerrosPorRaza("hound").enqueue(object: Callback<ImagesRaza>{
+
+                // @Override
+                override fun onResponse(call: Call<ImagesRaza>, response: Response<ImagesRaza>) {
+                    //TODO("Not yet implemented")
+                    val dogs = response.body()?.message // Array
+                    Log.d("PRUEBAS", "Status de la respuesta ${response.body()?.status}")
+
+                    if(dogs != null){
+                        for (dog in dogs){
+                            Log.d("PRUEBAS", "Tu perro es ${dog}")
+                        }
+                    }
+                }
+
+                // @Override
+                override fun onFailure(call: Call<ImagesRaza>, t: Throwable) {
+                    //TODO("Not yet implemented")
+                }
+
+            })
+        }
+
+        return super.onOptionsItemSelected(item)
     }
 
 
