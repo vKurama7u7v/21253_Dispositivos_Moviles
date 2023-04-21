@@ -10,14 +10,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:background="@color/background">
+        android:padding="16dp"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="32dp"
             android:orientation="vertical"
-            android:background="@color/white">
+            android:padding="16dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -30,14 +30,128 @@
                 android:padding="16dp"
                 />
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/RecyclerMenuOptions"
-                tools:listitem="@layout/activity_menu_option"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
                 >
 
-            </androidx.recyclerview.widget.RecyclerView>
+                <RelativeLayout
+                    android:id="@+id/optionCat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/background"
+                    >
+                    <ImageView
+                        android:id="@+id/imgCat"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/cat"
+                        />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgCat"
+                        android:text="Gatos"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/optionProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/background"
+                    >
+                    <ImageView
+                        android:id="@+id/imgProfile"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/profile"
+                        />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgProfile"
+                        android:text="Perfil"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/optionConfig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/background"
+                    >
+                    <ImageView
+                        android:id="@+id/imgConfig"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/config"
+                        />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgConfig"
+                        android:text="Configurar"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/optionClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/background"
+                    >
+                    <ImageView
+                        android:id="@+id/imgClose"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/close"
+                        />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgClose"
+                        android:text="Cerrar"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
 
         </LinearLayout>
 
