@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
 import android.widget.EditText
+import com.example.examen2do.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class SolicitarPreferencias : AppCompatActivity() {
@@ -27,8 +28,6 @@ class SolicitarPreferencias : AppCompatActivity() {
         setContentView(R.layout.activity_solicitar_preferencias)
 
         inicializarVistas()
-
-
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
@@ -41,9 +40,8 @@ class SolicitarPreferencias : AppCompatActivity() {
             putInt(EDAD_KEY, edad)
             putString(NOMBREGATO_KEY, nombregato)
         }
-// call superclass to save any view hierarchy
-        super.onSaveInstanceState(outState)
 
+        super.onSaveInstanceState(outState)
     }
 
     override fun onResume() {
