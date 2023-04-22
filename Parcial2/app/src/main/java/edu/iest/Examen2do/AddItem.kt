@@ -1,4 +1,4 @@
-package edu.iest.parcial2
+package edu.iest.Examen2do
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,7 +8,7 @@ import android.util.Log
 import android.widget.EditText
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-class SolicitarPreferencias : AppCompatActivity() {
+class AddItem : AppCompatActivity() {
 
     private lateinit var etNombreDueño: EditText
     private lateinit var etNombreGato: EditText
@@ -91,7 +91,7 @@ class SolicitarPreferencias : AppCompatActivity() {
             editor.putString(NOMBREGATO_KEY, nombregato)
             editor.putInt(EDAD_KEY, edad)
             editor.apply()
-            val s = Intent(this, MostarPreferencias::class.java)
+            val s = Intent(this, ViewItem::class.java)
             startActivity(s)
             finish()
         }

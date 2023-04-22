@@ -1,11 +1,11 @@
-package edu.iest.parcial2
+package edu.iest.Examen2do
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import android.view.View
 import android.widget.*
-import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -14,25 +14,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var btnProfile: ImageView
     private lateinit var btnSettings: ImageView
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        var imgProfile = findViewById<ImageView>(R.id.imgPerfil)
-        var imgCerrar = findViewById<ImageView>(R.id.imgCerrar)
-/*
-        imgCerrar.setOnClickListener {
-            finish()
-        }
-
-        imgProfile.setOnClickListener {
-            val s = Intent(this, SolicitarPreferencias::class.java)
-            startActivity(s)
-            finish()
-        }
-
- */
         inicializarVistas()
         asignarEventos()
     }
@@ -51,6 +35,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btnClose?.setOnClickListener(this)
     }
 
+
+
     override fun onClick(p0: View?) {
         //TODO("Not yet implemented")
         when(p0?.id){
@@ -58,11 +44,16 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 finish()
             }
             R.id.imgPerfil ->{
-                val s = Intent(this, SolicitarPreferencias::class.java)
+                val s = Intent(this, AddItem::class.java)
                 startActivity(s)
                 finish()
             }
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu, menu)
+        return super.onCreateOptionsMenu(menu)
     }
 
 }

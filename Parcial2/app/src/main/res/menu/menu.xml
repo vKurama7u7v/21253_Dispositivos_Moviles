@@ -7,7 +7,6 @@
         android:title="Wifi"
         android:icon="@drawable/baseline_wifi_24"
         app:showAsAction="ifRoom">
-
     </item>
 
 </menu>

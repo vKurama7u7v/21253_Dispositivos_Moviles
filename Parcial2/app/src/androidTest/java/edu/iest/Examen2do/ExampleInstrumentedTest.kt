@@ -1,4 +1,4 @@
-package edu.iest.parcial2
+package edu.iest.Examen2do
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

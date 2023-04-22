@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'edu.iest.parcial2'
+    namespace 'edu.iest.Examen2do'
     compileSdk 33
 
     defaultConfig {
-        applicationId "edu.iest.parcial2"
+        applicationId "edu.iest.Examen2do"
         minSdk 25
         targetSdk 33
         versionCode 1

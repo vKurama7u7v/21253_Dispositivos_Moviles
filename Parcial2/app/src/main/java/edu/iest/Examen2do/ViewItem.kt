@@ -1,4 +1,4 @@
-package edu.iest.parcial2
+package edu.iest.Examen2do
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 
-class MostarPreferencias : AppCompatActivity() {
+class ViewItem : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,7 +27,7 @@ class MostarPreferencias : AppCompatActivity() {
         tvedadgato.text = edad
 
         bnback.setOnClickListener {
-            val s = Intent(this, SolicitarPreferencias::class.java)
+            val s = Intent(this, AddItem::class.java)
             startActivity(s)
             finish()
         }

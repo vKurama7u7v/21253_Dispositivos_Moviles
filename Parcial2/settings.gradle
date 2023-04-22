@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Parcial2"
+rootProject.name = "Examen2do"
 include ':app'

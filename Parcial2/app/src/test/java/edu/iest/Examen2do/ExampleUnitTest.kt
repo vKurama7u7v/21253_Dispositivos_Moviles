@@ -1,4 +1,4 @@
-package edu.iest.parcial2
+package edu.iest.Examen2do
 
 import org.junit.Test
 
