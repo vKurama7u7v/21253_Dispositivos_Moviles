@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import com.example.examen2do.R
 import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
