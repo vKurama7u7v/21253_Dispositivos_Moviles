@@ -9,10 +9,13 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ExamenParcial2"
+        android:theme="@style/Theme.Examen2do"
         tools:targetApi="31">
         <activity
-            android:name=".AddForm"
+            android:name=".AddGato"
+            android:exported="false" />
+        <activity
+            android:name=".ListadoActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
