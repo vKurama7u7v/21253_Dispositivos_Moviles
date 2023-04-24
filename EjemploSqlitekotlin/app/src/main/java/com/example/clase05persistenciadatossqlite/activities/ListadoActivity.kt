@@ -13,6 +13,7 @@ import android.view.Menu
 import android.widget.ListView
 import android.widget.SearchView
 import android.widget.Toast
+import androidx.recyclerview.widget.RecyclerView
 import com.example.clase05persistenciadatossqlite.R
 import com.example.clase05persistenciadatossqlite.adapters.JuegosAdapter
 import com.example.clase05persistenciadatossqlite.db.ManejadorBaseDatos
