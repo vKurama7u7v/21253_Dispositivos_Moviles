@@ -4,6 +4,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 class API {
+    // Creando conexión con API
     private val URL_BASE = "https://dog.ceo/api/"
 
     fun crearServicioAPI(): ApiInterface {

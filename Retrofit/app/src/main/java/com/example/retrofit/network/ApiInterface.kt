@@ -6,7 +6,7 @@ import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
 
-
+// Endpoints a consumir
 interface ApiInterface {
     // Imagen Random
     @GET("breeds/image/random")
