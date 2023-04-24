@@ -20,7 +20,6 @@
             android:id="@+id/etTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
             android:text="Nombre del Juego"
             android:textStyle="bold"
             android:textColor="#436eed"
@@ -32,12 +31,17 @@
             android:id="@+id/tvContent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
             android:textColor="@color/black"
             android:text="Consola"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
 
+            />
+
+        <TextView
+            android:id="@+id/tvClasificacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clasificacion"
             />
 
         <LinearLayout
@@ -50,16 +54,16 @@
             <ImageView
                 app:srcCompat="@drawable/baseline_edit_24"
                 android:id="@+id/img01"
-                android:layout_width="32dp"
-                android:layout_height="32dp"/>
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
 
             <ImageView
                 app:srcCompat="@drawable/baseline_delete_forever_24"
                 android:id="@+id/img02"
                 android:layout_marginStart="8dp"
 
-                android:layout_width="32dp"
-                android:layout_height="32dp"/>
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
         </LinearLayout>
 
 

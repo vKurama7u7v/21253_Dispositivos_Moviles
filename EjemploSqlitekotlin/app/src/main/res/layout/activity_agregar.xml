@@ -24,7 +24,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Agregar Item"
+            android:text="Agregar Videojuego"
             android:textAlignment="center"
             android:textStyle="bold"
             android:textColor="#436eed"
@@ -38,7 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:text="Ingrese el nombre del juego:" />
+            android:text="Nombre del Videojuego:" />
 
         <EditText
             android:id="@+id/etJuego"
@@ -47,7 +47,20 @@
             android:ems="10"
             android:inputType="textPersonName" />
 
+        <TextView
+            android:id="@+id/tvClasificacion"
+            android:paddingTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Clasificación:" />
 
+        <EditText
+            android:id="@+id/etClasificacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
 
         <TextView
             android:paddingTop="16dp"
