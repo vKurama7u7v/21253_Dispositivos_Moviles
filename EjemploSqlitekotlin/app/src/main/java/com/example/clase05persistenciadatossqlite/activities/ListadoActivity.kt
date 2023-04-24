@@ -34,6 +34,7 @@ class ListadoActivity : AppCompatActivity(), juegosInterface {
         inicializarVistas()
         asignarEventos()
     }
+
     override fun onResume() {
         super.onResume()
         traerMisJuegos()
