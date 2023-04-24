@@ -7,14 +7,12 @@ class FakerVideogames {
         var videogames : ArrayList<Videojuego>
         videogames = arrayListOf<Videojuego>()
 
-        var videojuego = Videojuego(1, "Zelda Breath of the Wild", 1600F, "Nintendo", R.drawable.zeldabotw)
-        videogames.add(videojuego)
-
-        videogames.add(Videojuego(2, "Gears of War 4", 1700F, "Xbox", R.drawable.gears))
-        videogames.add(Videojuego(3, "Zelda Tears of the Kingdom", 1600F, "Nintendo", R.drawable.juego))
-        videogames.add(Videojuego(4, "Ori", 500F, "Multiplataforma", R.drawable.ori))
-        videogames.add(Videojuego(5, "Inmortals", 1200F, "Multiplataforma", R.drawable.inmortals))
-        videogames.add(Videojuego(6, "Overwatch", 999F, "Multiplataforma", R.drawable.overwatch))
+        videogames.add(Videojuego(1, "Zelda Breath of the Wild", 1600F, "Nintendo", R.drawable.zeldabotw, "Everyone"))
+        videogames.add(Videojuego(2, "Gears of War 4", 1700F, "Xbox", R.drawable.gears, "Mature"))
+        videogames.add(Videojuego(3, "Zelda Tears of the Kingdom", 1600F, "Nintendo", R.drawable.juego, "Everyone"))
+        videogames.add(Videojuego(4, "Ori", 500F, "Multiplataforma", R.drawable.ori, "Everyone"))
+        videogames.add(Videojuego(5, "Inmortals", 1200F, "Multiplataforma", R.drawable.inmortals, "Everyone"))
+        videogames.add(Videojuego(6, "Overwatch", 999F, "Multiplataforma", R.drawable.overwatch, "Everyone"))
 
         return videogames
     }
